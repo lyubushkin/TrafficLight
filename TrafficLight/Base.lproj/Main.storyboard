@@ -16,30 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRb-xT-9kT">
-                                <rect key="frame" x="132" y="124" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x1D-hW-xSB">
-                                <rect key="frame" x="132" y="307" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9x-n3-2ch">
-                                <rect key="frame" x="132" y="490" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9x-n3-2ch">
+                                <rect key="frame" x="140" y="418" width="134" height="134"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F9x-n3-2ch" secondAttribute="height" multiplier="1:1" id="mcS-zM-6af"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbN-Sb-18D">
-                                <rect key="frame" x="125" y="738" width="157" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1D-hW-xSB">
+                                <rect key="frame" x="140" y="243" width="134" height="134"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x1D-hW-xSB" secondAttribute="height" multiplier="1:1" id="JdN-Ha-OqS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRb-xT-9kT">
+                                <rect key="frame" x="140" y="69" width="134" height="134"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vRb-xT-9kT" secondAttribute="height" multiplier="1:1" id="P2t-6C-8zg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbN-Sb-18D">
+                                <rect key="frame" x="35" y="783" width="344" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="74" id="4XL-wa-4Uk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="START">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="toggleLightButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rta-06-4Ok"/>
@@ -48,6 +57,20 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vRb-xT-9kT" firstAttribute="trailing" secondItem="x1D-hW-xSB" secondAttribute="trailing" id="20o-n5-dwN"/>
+                            <constraint firstItem="x1D-hW-xSB" firstAttribute="top" secondItem="vRb-xT-9kT" secondAttribute="bottom" constant="40" id="5LQ-8C-IEV"/>
+                            <constraint firstItem="vRb-xT-9kT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="5z2-6t-XAq"/>
+                            <constraint firstItem="vRb-xT-9kT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="60P-78-Ic7"/>
+                            <constraint firstItem="F9x-n3-2ch" firstAttribute="top" secondItem="x1D-hW-xSB" secondAttribute="bottom" constant="41" id="8WH-xf-Ysg"/>
+                            <constraint firstItem="x1D-hW-xSB" firstAttribute="trailing" secondItem="F9x-n3-2ch" secondAttribute="trailing" id="DdQ-S2-Iru"/>
+                            <constraint firstItem="AbN-Sb-18D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-31" id="Nkb-C8-NM1"/>
+                            <constraint firstItem="AbN-Sb-18D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Ox6-jp-7sH"/>
+                            <constraint firstItem="AbN-Sb-18D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YNy-cB-NG3"/>
+                            <constraint firstItem="vRb-xT-9kT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.323671" id="b0H-67-Alr"/>
+                            <constraint firstItem="vRb-xT-9kT" firstAttribute="leading" secondItem="x1D-hW-xSB" secondAttribute="leading" id="sho-gY-WMF"/>
+                            <constraint firstItem="x1D-hW-xSB" firstAttribute="leading" secondItem="F9x-n3-2ch" secondAttribute="leading" id="thR-Em-lrz"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="toggleButton" destination="AbN-Sb-18D" id="7b2-9q-PgY"/>
@@ -58,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+            <point key="canvasLocation" x="17.39130434782609" y="93.080357142857139"/>
         </scene>
     </scenes>
     <resources>
