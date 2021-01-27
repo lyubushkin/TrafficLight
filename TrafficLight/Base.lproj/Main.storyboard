@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9x-n3-2ch">
-                                <rect key="frame" x="140" y="418" width="134" height="134"/>
+                                <rect key="frame" x="125.5" y="475.5" width="163" height="163.5"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <constraints>
@@ -25,7 +25,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1D-hW-xSB">
-                                <rect key="frame" x="140" y="243" width="134" height="134"/>
+                                <rect key="frame" x="125.5" y="272.5" width="163" height="163"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <constraints>
@@ -33,7 +33,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRb-xT-9kT">
-                                <rect key="frame" x="140" y="69" width="134" height="134"/>
+                                <rect key="frame" x="125.5" y="69" width="163" height="163.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <constraints>
@@ -62,12 +62,12 @@
                             <constraint firstItem="x1D-hW-xSB" firstAttribute="top" secondItem="vRb-xT-9kT" secondAttribute="bottom" constant="40" id="5LQ-8C-IEV"/>
                             <constraint firstItem="vRb-xT-9kT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="5z2-6t-XAq"/>
                             <constraint firstItem="vRb-xT-9kT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="60P-78-Ic7"/>
-                            <constraint firstItem="F9x-n3-2ch" firstAttribute="top" secondItem="x1D-hW-xSB" secondAttribute="bottom" constant="41" id="8WH-xf-Ysg"/>
+                            <constraint firstItem="F9x-n3-2ch" firstAttribute="top" secondItem="x1D-hW-xSB" secondAttribute="bottom" constant="40" id="8WH-xf-Ysg"/>
                             <constraint firstItem="x1D-hW-xSB" firstAttribute="trailing" secondItem="F9x-n3-2ch" secondAttribute="trailing" id="DdQ-S2-Iru"/>
                             <constraint firstItem="AbN-Sb-18D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-31" id="Nkb-C8-NM1"/>
                             <constraint firstItem="AbN-Sb-18D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Ox6-jp-7sH"/>
                             <constraint firstItem="AbN-Sb-18D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YNy-cB-NG3"/>
-                            <constraint firstItem="vRb-xT-9kT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.323671" id="b0H-67-Alr"/>
+                            <constraint firstItem="vRb-xT-9kT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.182218" id="rCt-4V-Roc"/>
                             <constraint firstItem="vRb-xT-9kT" firstAttribute="leading" secondItem="x1D-hW-xSB" secondAttribute="leading" id="sho-gY-WMF"/>
                             <constraint firstItem="x1D-hW-xSB" firstAttribute="leading" secondItem="F9x-n3-2ch" secondAttribute="leading" id="thR-Em-lrz"/>
                         </constraints>

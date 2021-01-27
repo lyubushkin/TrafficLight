@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         for light in lightsView {
             light.alpha = 0.3
-            light.layer.cornerRadius = 65
+            light.layer.cornerRadius = 70
         }
         
         toggleButton.layer.cornerRadius = 10
